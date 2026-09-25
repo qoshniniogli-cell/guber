@@ -41,3 +41,7 @@ Boshqa variantlar: Netlify yoki Vercel (papkani sudrab tashlash kifoya) yoki o'z
 | `config.js` | **Barcha matn, rasm, sana, manzil shu yerda** |
 | `editor.html`, `editor.css`, `editor.js` | Vizual muharrir |
 | `assets/` | O'z rasm, video, musiqa fayllaringiz |
+
+## O'z noutbukingizda server (guber.uz)
+Docker + Cloudflare Tunnel orqali, oq IP'siz, "Verify you are human" oynasisiz ishlaydi.
+To'liq yo'riqnoma: **[server/QOLLANMA.md](server/QOLLANMA.md)**
