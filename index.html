@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>To'yga taklifnoma</title>
+  <meta name="description" content="Nikoh to'yiga onlayn taklifnoma">
+  <meta property="og:title" content="To'yga taklifnoma">
+  <meta property="og:description" content="Sizni to'yimizga lutfan taklif etamiz!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Konvert (kirish ekrani) -->
+  <div id="intro" class="intro">
+    <div class="intro-inner">
+      <p class="intro-to" id="introTo"></p>
+      <div class="envelope" id="envelope">
+        <div class="env-back"></div>
+        <div class="env-letter">
+          <span class="script" id="letterNames"></span>
+          <span class="letter-date" id="letterDate"></span>
+        </div>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <button class="seal" id="seal" aria-label="Taklifnomani ochish"><span id="sealText"></span></button>
+      </div>
+      <p class="intro-hint">Taklifnomani ochish uchun muhrni bosing</p>
+    </div>
+  </div>
+
+  <div id="petals" class="petals" aria-hidden="true"></div>
+
+  <main id="app"></main>
+
+  <button id="musicBtn" class="music-btn" hidden aria-label="Musiqa">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/></svg>
+  </button>
+  <audio id="bgMusic" loop preload="none"></audio>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button class="lb-close" aria-label="Yopish">&times;</button>
+    <img alt="">
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

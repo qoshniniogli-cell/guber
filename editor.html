@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taklifnoma muharriri</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="panel" id="panel">
+      <header class="panel-head">
+        <h1><span class="script">Taklifnoma</span> muharriri</h1>
+        <p>Matn, rasm, video, manzil va vaqtni o'zgartiring — o'ng tomonda darhol ko'rinadi.</p>
+      </header>
+
+      <form id="form" autocomplete="off"></form>
+
+      <div class="actions">
+        <button class="btn primary" id="exportBtn" type="button">⬇ config.js ni yuklab olish</button>
+        <button class="btn" id="openBtn" type="button">↗ To'liq ekranda ko'rish</button>
+        <button class="btn" id="importBtn" type="button">⬆ config.js ni yuklash</button>
+        <button class="btn danger" id="resetBtn" type="button">↺ Asl holiga qaytarish</button>
+        <input type="file" id="importFile" accept=".js,.json" hidden>
+      </div>
+
+      <section class="card">
+        <h2>Mehmonga shaxsiy havola</h2>
+        <p class="hint">Mehmon ismini yozing — taklifnoma "Hurmatli &lt;ism&gt;!" deb ochiladi.</p>
+        <div class="row">
+          <input id="guestName" placeholder="Masalan: Aziz aka">
+          <button class="btn" id="copyLink" type="button">Nusxalash</button>
+        </div>
+        <p class="hint mono" id="guestLink"></p>
+      </section>
+
+      <section class="card note">
+        <h2>Qanday saqlanadi?</h2>
+        <p class="hint">O'zgarishlar shu brauzerda avtomatik saqlanadi (qoralama). Mehmonlar ko'rishi uchun
+          <b>config.js ni yuklab oling</b> va saytdagi eski <code>config.js</code> faylini almashtiring
+          (batafsil — README.md).</p>
+      </section>
+    </aside>
+
+    <section class="preview">
+      <div class="phone">
+        <iframe id="preview" src="index.html?preview=1" title="Oldindan ko'rish"></iframe>
+      </div>
+    </section>
+  </div>
+
+  <nav class="tabs">
+    <button type="button" class="active" data-view="edit">✎ Tahrirlash</button>
+    <button type="button" data-view="preview">👁 Ko'rish</button>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="config.js"></script>
+  <script src="editor.js"></script>
+</body>
+</html>
